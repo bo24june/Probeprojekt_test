@@ -6,5 +6,5 @@ git push origin master
 
 
 #git clone https://github.com/bo24june/Probeprojekt_test.git temp
-mv temp/.git  /srv/git/cisco/cisco_conf_test/.git
+mv temp/.git  cisco/.git
 rm -rf temp 
