@@ -5,17 +5,6 @@ git commit -m "$desc"
 git push origin master 
 
 
-#git clone https://github.com/bo24june/Probeprojekt_test/ 
-
-
-#Clone just the repository's .git folder (excluding files as they are already in
-# `existing-dir`) into an empty temporary directory
-git clone --no-checkout https://github.com/bo24june/Probeprojekt_test/tree/cisco /srv/git/cisco/cisco_conf_test/cisco
-
-# Move the .git folder to the directory with the files.
-# This makes `existing-dir` a git repo.
-mv /srv/git/cisco/cisco_conf_test/cisco.tmp/ srv/git/cisco/cisco_conf_test/cisco
-
-# Delete the temporary directory
-rmdir /srv/git/cisco/cisco_conf_test/cisco.tmp
-cd /srv/git/cisco/cisco_conf_test/cisco
+#git clone https://github.com/bo24june/Probeprojekt_test.git temp
+mv temp/.git  /srv/git/cisco/cisco_conf_test/.git
+rm -rf temp 
