@@ -8,7 +8,7 @@ git push origin master
 #git clone https://github.com/bo24june/Probeprojekt_test/tree/cisco 
 
 
- Clone just the repository's .git folder (excluding files as they are already in
+#Clone just the repository's .git folder (excluding files as they are already in
 # `existing-dir`) into an empty temporary directory
 git clone --no-checkout https://github.com/bo24june/Probeprojekt_test/tree/cisco srv/git/cisco_conf_test/cisco/srv/git/cisco_conf_test/cisco.tmp # might want --no-hardlinks for cloning local repo
 
@@ -19,10 +19,3 @@ mv srv/git/cisco_conf_test/cisco/srv/git/cisco_conf_test/cisco.tmp/.git srv/git/
 # Delete the temporary directory
 rmdir srv/git/cisco_conf_test/cisco/srv/git/cisco_conf_test/cisco.tmp
 cd srv/git/cisco_conf_test/cisco
-
-# git thinks all files are deleted, this reverts the state of the repo to HEAD.
-# WARNING: any local changes to the files will be lost.
-git reset --hard HEAD
-
-
-
