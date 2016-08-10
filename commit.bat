@@ -1,8 +1,8 @@
 #!/bin/bash
-git add .  
-read -p "Commit description: " desc  
+git add . 
+ 
 git config --global credential.helper "cache --timeout=84400"
-git commit -m "$desc"
+git commit -m "Cron-Job_aktualisierung"
 git pull  
 git push origin master
 
