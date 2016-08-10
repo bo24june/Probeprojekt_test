@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp -R srv/ftp/testuser/ srv/git/cisco/cisco_conf_test
+cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
 
 git add . 
  
