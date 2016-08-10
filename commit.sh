@@ -4,7 +4,7 @@ cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
 
 git add . 
  
-git config --global credential.helper "cache --timeout=0"
+git config --global credential.helper "cache --timeout=84400"
 git commit -m "Cron-Job_aktualisierung"
 git pull  
 git push origin master
