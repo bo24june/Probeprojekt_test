@@ -7,7 +7,7 @@ git add .
 git config --global credential.helper "cache --timeout=84400"
 git commit -m "Cron-Job_aktualisierung"
 git pull  
-git push origin master
+git push origin master 
 
 
  rsync -avW --delete-before -e  /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
