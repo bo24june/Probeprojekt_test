@@ -5,7 +5,7 @@
 #cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/
 
 
-rsync -avWe --delete-before /srv/ftp/testuser/ /srv/git/cisco_conf_test/testuser/
+rsync -avWe --delete-before /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
 
 
  git add . 
