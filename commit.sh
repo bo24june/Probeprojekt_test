@@ -14,7 +14,7 @@ git pull
 git push origin master
 
 rm -r /srv/ftp/
- 
+mkdir /srv/ftp/testuser 
 cp -R /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/
 
 
