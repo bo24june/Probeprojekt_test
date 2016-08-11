@@ -13,6 +13,9 @@ git commit -m "Cron-Job_aktualisierung"
 git pull  
 git push origin master
 
+
+rsync -n /srv/git/cisco/cisco_conf_test  /srv/ftp/testuser/ 
+
 #git clone bo24june@github.com:bo24june/Probeprojekt_test.git temp
 #mv temp/.git  cisco_conf_test/.git
 #rm -rf temp 
