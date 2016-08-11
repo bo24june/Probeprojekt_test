@@ -12,6 +12,8 @@
 
 rsync -avWe --delete-before /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
 
+rsync -avW --delete-before -e  /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
+
 
  git add . 
  
