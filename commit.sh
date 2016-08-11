@@ -2,19 +2,20 @@
 
 #rsync /srv/ftp/testuser /srv/git/cisco/cisco_conf_test
 
-
 cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/
 
 
-git add . 
+
+ git add . 
  
 git config --global credential.helper "cache --timeout=84400"
 git commit -m "Cron-Job_aktualisierung"
 git pull  
 git push origin master
 
-
-cp -R /srv/git/cisco/cisco_conf_test/testuser /srv/ftp/
+rm -r /srv/ftp/
+ 
+cp -R /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/
 
 
 #rsync  /srv/git/cisco/cisco_conf_test  /srv/ftp/testuser/ 
