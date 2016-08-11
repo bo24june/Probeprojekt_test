@@ -1,6 +1,6 @@
 #/bin/bash
 
-rsync -v /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
+rsync  /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
 
 
 #cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
@@ -14,7 +14,7 @@ git pull
 git push origin master
 
 
-rsync -v /srv/git/cisco/cisco_conf_test  /srv/ftp/testuser/ 
+#rsync  /srv/git/cisco/cisco_conf_test  /srv/ftp/testuser/ 
 
 #git clone bo24june@github.com:bo24june/Probeprojekt_test.git temp
 #mv temp/.git  cisco_conf_test/.git
