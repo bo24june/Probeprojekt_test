@@ -21,13 +21,13 @@ git pull
 git push origin master
 
  
-#cp -R /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/
 
 
 ##rsync -rPz  /srv/git/cisco/cisco_conf_test/testuser/  /srv/ftp/testuser/ 
 
  rsync -avW --delete-before -e  /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
 
+cp -R /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/
 
 
 
