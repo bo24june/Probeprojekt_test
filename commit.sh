@@ -1,13 +1,16 @@
 #/bin/bash
 
+echo "pwd is: `pwd`"
+repo="/srv/git/cisco/cisco_conf_test"
+
 rsync -avh /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/  --delete
 
-git add . 
+git -C $repo add . 
  
-git config --global credential.helper "cache --timeout=84400"
-git commit -m "Cron-Job_aktualisierung"
-git pull  
-git push origin master 
+git -C $repo config --global credential.helper "cache --timeout=84400"
+git -C $repo commit -m "Cron-Job_aktualisierung"
+git -C $repo pull  
+git -C $repo push origin master 
 
 
  rsync -avW --delete-before -e  /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
