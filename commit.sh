@@ -27,7 +27,6 @@ git push origin master
 
  rsync -avW --delete-before -e  /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
 
-cp -R /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/
 
 
 
