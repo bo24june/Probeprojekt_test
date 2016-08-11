@@ -18,7 +18,7 @@ git push origin master
 #cp -R /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/
 
 
-rsync  /srv/git/cisco/cisco_conf_test/testuser/  /srv/ftp/ 
+rsync -rPz  /srv/git/cisco/cisco_conf_test/testuser/  /srv/ftp/ 
 
 #git clone bo24june@github.com:bo24june/Probeprojekt_test.git temp
 #mv temp/.git  cisco_conf_test/.git
