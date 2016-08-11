@@ -1,6 +1,6 @@
 #/bin/bash
 
-rsync -rPz /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/
+rsync -rPz /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/
 
 #cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/
 
