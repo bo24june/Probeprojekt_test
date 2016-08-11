@@ -14,7 +14,7 @@ git pull
 git push origin master
 
 
-cp /srv/git/cisco/cisco_conf_test/testuser/ /srv/ftp/testuser/
+cp /srv/git/cisco/cisco_conf_test/testuser /srv/ftp/testuser/
 
 
 #rsync  /srv/git/cisco/cisco_conf_test  /srv/ftp/testuser/ 
