@@ -1,7 +1,11 @@
 #!/bin/bash
 
+rsync -n /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
+
+
 cp -R /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
-diff -q /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test
+
+
 git add . 
  
 git config --global credential.helper "cache --timeout=84400"
