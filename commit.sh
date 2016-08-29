@@ -6,7 +6,7 @@ repo="/srv/git/cisco/cisco_conf_test"
 rsync -avh /srv/ftp/testuser/ /srv/git/cisco/cisco_conf_test/testuser/  --delete
 
 git -C $repo add . 
- 
+
 git -C $repo config --global credential.helper "cache --timeout=84400"
 git -C $repo commit -m "Cron-Job_aktualisierung"
 git -C $repo pull  
